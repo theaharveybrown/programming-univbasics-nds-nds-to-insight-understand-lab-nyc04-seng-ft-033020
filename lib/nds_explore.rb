@@ -10,7 +10,12 @@ end
 
 def print_first_directors_movie_titles
   j = 0
-  while directors_database[0][j]
+  movies = []
+  while j < directors_database[0][:movies].length do
+    movies << directors_database[0][:movies][j]
+    j += 1
+  end
+  movies
 end
 
 pp directors_database
