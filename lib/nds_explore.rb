@@ -15,8 +15,7 @@ def print_first_directors_movie_titles
     movies << directors_database[0][:movies][j][:title]
     j += 1
   end
-  movies
+  puts movies
 end
 
 
-print_first_directors_movie_titles
